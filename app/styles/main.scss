@@ -1,0 +1,54 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// vars
+$orange: #ff3c00;
+
+/* Space out content a bit */
+
+
+// menu
+.primary-nav{
+  // background-image: url('');
+  background-color: #ddd;
+  padding: 60px 0px 30px 0px;
+}
+.menu .nav{
+  text-align: right;
+  text-transform: uppercase;
+  border-right: $orange solid 2px;
+  padding-bottom: 30px;
+  li{
+    a{
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 0px 20px 0px 0px;
+      &:hover{
+        color: $orange;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+    .arrow .fa.fa-play{
+      margin-left: 5px;
+      font-size: 13px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+// have a question
+.have-questions{
+  padding: 3px 0px;
+  background-color: $orange;
+  h4.question{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+  }
+}
