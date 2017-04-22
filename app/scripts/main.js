@@ -18,3 +18,22 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+function navControl(){
+    let $navControl = $('#nav-control');
+    let $navLink = $('#nav-control li a')
+    let $copy = $('#nav-content .copy')
+
+    $navLink.on('click', function(e){
+
+        e.preventDefault()
+        //hide content
+        $copy.hide();
+        
+        let index = $navLink.index(this)
+        $copy.eq(index).show();
+
+    })
+}
+navControl()
+

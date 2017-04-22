@@ -30,7 +30,6 @@ $dark-gray: #2a2a2a;
     z-index: 2;
     width: 550px;
     .welcome-wrapper{
-      border: red solid 1px;
       width: 400px;
       margin: 0 auto;
       position: relative;
@@ -45,12 +44,13 @@ $dark-gray: #2a2a2a;
           }
         }
         .tele{
-          width: 150px;
+          width: 180px;
           float: right;
           h3{
             margin: 0px;
             color: white;
             font-weight: bold;
+            font-size: 28px;
           }
         }
       }
@@ -66,6 +66,22 @@ $dark-gray: #2a2a2a;
           .push{
             margin-left: 30px;
           }
+        }
+      }
+    }
+    .list-wrapper{
+      width: 320px;
+      margin: 0 auto;
+      margin-top: 30px;
+      position: relative;
+      left: -20px;
+      ul{
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        li{
+          font-size: 16px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -111,13 +127,32 @@ $dark-gray: #2a2a2a;
   background-color: black;
   padding: 60px 0px 40px 0px;
 }
+#nav-content{
+  color: white;
+  h4{
+    font-weight: 600;
+  }
+  p{
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .copy{
+    display: none;
+    &:nth-child(1){
+      display: block;
+    }
+  }
+  
+}
 .menu .nav{
+  
   text-align: right;
   text-transform: uppercase;
   border-right: $orange solid 2px;
   padding-bottom: 20px;
   li{
     a{
+      background-color: transparent;
       color: white;
       margin-bottom: 20px;
       font-size: 16px;
@@ -305,7 +340,10 @@ h1.slant{
   padding: 40px 0px;
   color: white;
   .moving-forward{
-
+    width: 250px;
+    img{
+      width: 100%;
+    }
   }
   .dispatch-for{
     h3{
