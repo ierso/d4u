@@ -12,6 +12,8 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.theme.default.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -27,22 +29,53 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+     <!-- Carousel
+    ================================================== -->
+    
+    
     
     <div class="container-fluid">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">truckers</h3>
-      </div>
+      
+      
+      <section class="slider">
+        <div class="owl-carousel owl-theme">
+          <div class="slide" id="slide-1">
+            <div class="welcome container">
+              <div class="orange-slice">
+                <div class="welcome-wrapper">
+                  <div class="logo-wrapper">
+                    <div class="logo">
+                      <img src="/images/logo.png">
+                    </div>
+                    <div class="tele">
+                      <h3>885.328.7914</h3>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="title-wrapper">
+                    <h1>Welcome<br><span class="push">Truckers!</span></h1>
+                    <ul>
+                      <li>D4U.today is a place where Truckers and Loads meet!</li>
+                      <li>There are many services we offer that can help You grow Your business!</li>
+                      <li>We know the industry! We know the business! We are in the same boat!</li>
+                      <li>Our Goal is Your “Success”! That’s what we work for!</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="slide-2">
+            <div class="welcome container">
+              <div class="orange-slice">
+                <h1>Welcome<br><span class="push">Truckers!</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="slide-3"></div>
+        </div>
+      </section>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
       <section class="primary-nav">
         <div class="container">
             <div class="row menu">
@@ -65,7 +98,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section class="have-questions">
         <div class="container">
@@ -227,18 +260,15 @@
                     out to you shortly to finalize the setup process!</p>
                 </div>
                 <div class="col-md-2">
-                  <a class="btn btn=primary">Apply Now</a>
+                  <a class="btn btn-primary">Apply Now!</a>
                 </div>
               </div>
             </div>
             <div class="sign-up-img col-sm-4">
-             
             </div>
           </div>
         </div>
       </section>
-
-
       <section class="have-questions">
         <div class="container">
           <div class="row">
@@ -248,9 +278,41 @@
         </div>
       </section>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
+      <section class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="moving-forward col-md-6">
+              Moving forward
+            </div>
+            <div class="dispatch-for col-md-6">
+              <h3>Dispatch For You</h3>
+              <ul>
+                <li>1071 Springfield Road</li>
+                <li>Union, NJ 07083</li>
+                <li>Tel: 855.328.7914 <span class="orange">|</span> Fax: 888.259.3167</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="google-maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.1582643451034!2d-74.30142904884934!3d40.69251194664267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3adef906996e5%3A0x904e1077565aa023!2s1071+Springfield+Rd%2C+Union%2C+NJ+07083!5e0!3m2!1sen!2sus!4v1492814455163" 
+          frameborder="0" style="width: 100%; height: 400px; border:0" allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Copyright 1996-2016 Company Co. All rights reserved</p>
+            </div>
+          </div>
+        </div> 
+      </section>
     </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -266,6 +328,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
