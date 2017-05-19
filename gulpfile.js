@@ -165,6 +165,12 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
+// fontawesome
+gulp.task('icons', function() {
+    return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*')
+        .pipe(gulp.dest('./dist/fonts'));
+});
+
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
